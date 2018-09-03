@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/newbg_three"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/home_pix"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ceddii" />
+
+        <TextView
+            android:layout_width="356dp"
+            android:layout_height="204dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:paddingLeft="16dp"
+            android:text="Abuja is the capital city of Nigeria located in the centre of the country within the Federal Capital Territory (FCT). It is a planned city and was built mainly in the 1980s,[5] replacing the country's most populous city of Lagos as the capital on 12 December 1991. Abuja's geography is defined by Aso Rock, a 400-metre (1,300 ft) monolith left by water erosion. The Presidential Complex, National Assembly, Supreme Court and much of the city extend to the south of the rock. Zuma Rock, a 792-metre (2,598 ft) monolith, lies just north of the city on the expressway to Kaduna."
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</FrameLayout>

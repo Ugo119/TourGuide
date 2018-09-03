@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Wakkis"
-    android:background="@drawable/newbg_three">
+    android:background="@drawable/newbg_three"
+    android:transitionName="wakkis_transit">
 
     <ImageView
         android:id="@+id/imageView2"
