@@ -53,7 +53,6 @@ public class HospitalsFragment extends Fragment {
         hospital.add(new Tour("Vit Hospital", "Set in the serene part of town, offering specialist..", R.drawable.spicep));
         hospital.add(new Tour("Kart Clinics", "Set in the serene part of town, offering specialist..", R.drawable.wilsonn));
 
-
         // Create the adapter to convert the array to views
         TourAdapter adapter = new TourAdapter(getActivity(), hospital);
 
