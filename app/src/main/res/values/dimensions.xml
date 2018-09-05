@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detail_image_width">180dp</dimen>
+    <dimen name="detail_image_height">180dp</dimen>
+    <dimen name="eightdp_layouts">8dp</dimen>
+    <dimen name="med_text_size">14sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="xsmall_text_size">10sp</dimen>
+</resources>
