@@ -1,13 +1,15 @@
-package com.example.ugo.tourguide;
+package com.example.ugo.tourguide.Restaurants;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Wakkis extends AppCompatActivity {
+import com.example.ugo.tourguide.R;
+
+public class Jevinik extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wakkis);
+        setContentView(R.layout.activity_jevinik);
     }
 }

@@ -16,7 +16,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Wakkis"></activity>
+        <activity
+            android:name=".Restaurants.Wakkis"
+            android:label="Item 1" />
+        <activity
+            android:name=".Restaurants.MamaCass"
+            android:label="Item 2" />
+        <activity
+            android:name=".Restaurants.Jevinik"
+            android:label="Item 3" />
+        <activity
+            android:name=".Restaurants.SpicePlatter"
+            android:label="Item 4" />
+        <activity
+            android:name=".Restaurants.CharcoalGrill"
+            android:label="Item 5" />
+        <activity
+            android:name=".Restaurants.Nkoyo"
+            android:label="Item 6" />
+        <activity
+            android:name=".Restaurants.BluCabana"
+            android:label="Item 7" />
+        <activity
+            android:name=".Restaurants.Serendib"
+            android:label="Item 8" />
+        <activity android:name=".Hospitals.ForHospitals" />
+        <activity android:name=".Lounges.ForLounges" />
+        <activity android:name=".Parks.ForParks" />
+        <activity android:name=".Supermarkets.ForSupermarkets"></activity>
     </application>
 
 </manifest>

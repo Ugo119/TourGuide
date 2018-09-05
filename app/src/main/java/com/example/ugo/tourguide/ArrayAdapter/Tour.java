@@ -1,4 +1,4 @@
-package com.example.ugo.tourguide;
+package com.example.ugo.tourguide.ArrayAdapter;
 
 public class Tour {
     public String heading;

@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoungesFragment"
-    android:background="@drawable/newbg_three">
+    tools:context=".Lounges.LoungesFragment"
+    android:background="@drawable/bluuuee">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView

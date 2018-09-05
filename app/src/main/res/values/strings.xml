@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Tour Guide</string>
+    <string name="category_home">Home</string>
+    <string name="category_restaurant">Restaurants</string>
+    <string name="category_supermarket">Supermarkets</string>
+    <string name="category_park">Parks</string>
+    <string name="category_hospital">Hospitals</string>
+    <string name="category_lounge">Lounges</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

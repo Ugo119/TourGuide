@@ -1,8 +1,16 @@
 package com.example.ugo.tourguide;
 
+import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
+import com.example.ugo.tourguide.FragmentAdapter.TourFragmentPagerAdapter;
+import com.example.ugo.tourguide.Hospitals.HospitalsFragment;
+import com.example.ugo.tourguide.Lounges.LoungesFragment;
+import com.example.ugo.tourguide.Parks.ParksFragment;
+import com.example.ugo.tourguide.Restaurants.RestaurantFragment;
+import com.example.ugo.tourguide.Supermarkets.SuperMarketFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +27,25 @@ public class MainActivity extends AppCompatActivity {
         // Create an adapter that knows which fragment should be shown on each page
         TourFragmentPagerAdapter adapter = new TourFragmentPagerAdapter(getSupportFragmentManager());
 
+        //Adding fragments
+        adapter.AddFragment(new HomeFragment(), "Home");
+        adapter.AddFragment(new RestaurantFragment(), "Restaurants");
+        adapter.AddFragment(new SuperMarketFragment(), "Supermarkets");
+        adapter.AddFragment(new ParksFragment(), "Parks");
+        adapter.AddFragment(new HospitalsFragment(), "Hospitals");
+        adapter.AddFragment(new LoungesFragment(), "Lounges");
+
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
+
+        // Find the tab layout that shows the tabs
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+
+        // Connect the tab layout with the view pager. This will
+        //   1. Update the tab layout when the view pager is swiped
+        //   2. Update the view pager when a tab is selected
+        //   3. Set the tab layout's tab names with the view pager's adapter's titles
+        //      by calling onPageTitle()
+        tabLayout.setupWithViewPager(viewPager);
     }
 }

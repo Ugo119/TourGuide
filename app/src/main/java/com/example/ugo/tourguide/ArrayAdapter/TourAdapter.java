@@ -1,4 +1,4 @@
-package com.example.ugo.tourguide;
+package com.example.ugo.tourguide.ArrayAdapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.ugo.tourguide.R;
 
 import java.util.ArrayList;
 
