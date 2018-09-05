@@ -20,6 +20,7 @@ import java.util.List;
 
 public class TourFragmentPagerAdapter extends FragmentPagerAdapter {
 
+    //create an array for both the fragments and titles
     private final List<String> FragmentListTitles = new ArrayList<>();
     private final List<Fragment> fragmentList = new ArrayList<>();
 
@@ -27,40 +28,26 @@ public class TourFragmentPagerAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
-
+    //Create a method to get each fragment using their position
     @Override
     public Fragment getItem(int position) {
-       return fragmentList.get(position);
-
-
-        /*if (position == 0) {
-            return new HomeFragment();
-        } else if (position == 1) {
-            return new RestaurantFragment();
-        } else if (position == 2) {
-            return new SuperMarketFragment();
-        } else if (position == 3) {
-            return new ParksFragment();
-        } else if (position == 4) {
-            return new HospitalsFragment();
-        } else {
-            return new LoungesFragment();
-        }*/
-
+        return fragmentList.get(position);
     }
 
+    //Create a method to return the number of fragments.
     @Override
     public int getCount() {
         return 6;
     }
 
+    //Create a method to get each page title and label accordingly.
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         return FragmentListTitles.get(position);
     }
 
-    public void AddFragment (Fragment fragment, String Title){
+    public void AddFragment(Fragment fragment, String Title) {
         fragmentList.add(fragment);
         FragmentListTitles.add(Title);
     }

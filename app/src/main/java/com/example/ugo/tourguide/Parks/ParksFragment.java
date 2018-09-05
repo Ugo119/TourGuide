@@ -33,24 +33,21 @@ public class ParksFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_parks, container, false);
         // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_restaurant, container, false);
+
 
         //Create an arraylist of artists
         final ArrayList<Tour> parks = new ArrayList<Tour>();
-        parks.add(new Tour("Wakkis", "A hotel situated in Wuse 2", R.drawable.wakkiss));
-        parks.add(new Tour("Wilson", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        parks.add(new Tour("Dunes", "A hotel situated in Wuse 2", R.drawable.restaurant_one));
-        parks.add(new Tour("Mama Cass", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        parks.add(new Tour("Jevnik", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        parks.add(new Tour("Biobak", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        parks.add(new Tour("Biobak", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        parks.add(new Tour("Biobak", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-
+        parks.add(new Tour("Millenial", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.wakkiss));
+        parks.add(new Tour("Edil Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.spicep));
+        parks.add(new Tour("City Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.nkoyop));
+        parks.add(new Tour("Jag Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.wilsonn));
+        parks.add(new Tour("Matimo Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.blucabanap));
+        parks.add(new Tour("Redil Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.wilsonn));
+        parks.add(new Tour("National", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.grandsqr));
+        parks.add(new Tour("Wunder Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.jevinikp));
 
 
         // Create the adapter to convert the array to views
-        //TourAdapter adapter = new TourAdapter(this, restaurant);
-        //Create an ArrayAdapter object, adapter from the Custom ArrayAdapter class, WordAdapter
         TourAdapter adapter = new TourAdapter(getActivity(), parks);
 
         //Create an object of the ListView
@@ -65,27 +62,28 @@ public class ParksFragment extends Fragment {
                 //Get the {@link Word} object at the given position the user clicked on
                 Tour tour = parks.get(position);
 
-                if (position == 0){
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);}else if (position == 1){
+                if (position == 0) {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
-                }else if (position == 2){
+                } else if (position == 1) {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
-                }else if (position == 3){
+                } else if (position == 2) {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
-                }else if (position == 4){
+                } else if (position == 3) {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
-                }else if (position == 5){
+                } else if (position == 4) {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
-                }else if (position == 6){
+                } else if (position == 5) {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
-                }else {
+                } else if (position == 6) {
+                    Intent intent = new Intent(getActivity(), ForParks.class);
+                    startActivity(intent);
+                } else {
                     Intent intent = new Intent(getActivity(), ForParks.class);
                     startActivity(intent);
                 }

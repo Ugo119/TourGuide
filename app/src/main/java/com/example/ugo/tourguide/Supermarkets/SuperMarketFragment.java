@@ -36,7 +36,7 @@ public class SuperMarketFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_restaurant, container, false);
 
         //Create an arraylist of artists
-        final ArrayList<Tour> supmarket = new ArrayList <Tour>();
+        final ArrayList<Tour> supmarket = new ArrayList<Tour>();
         supmarket.add(new Tour("Grand Square", "The best supermarket that has all that you have ever wanted..", R.drawable.wakkisp));
         supmarket.add(new Tour("Xclusive Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.spicep));
         supmarket.add(new Tour("Chemzho Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.jevinikp));
@@ -44,13 +44,10 @@ public class SuperMarketFragment extends Fragment {
         supmarket.add(new Tour("Ibe Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.blucabanap));
         supmarket.add(new Tour("King Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.charcoalp));
         supmarket.add(new Tour("Sido Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.mamacassp));
-        supmarket.add(new Tour("Sido Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.mamacassp));
-
+        supmarket.add(new Tour("Chevo Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.mamacassp));
 
 
         // Create the adapter to convert the array to views
-        //TourAdapter adapter = new TourAdapter(this, restaurant);
-        //Create an ArrayAdapter object, adapter from the Custom ArrayAdapter class, WordAdapter
         TourAdapter adapter = new TourAdapter(getActivity(), supmarket);
 
         //Create an object of the ListView
@@ -59,33 +56,35 @@ public class SuperMarketFragment extends Fragment {
         // Attach the adapter to a ListView
         listView.setAdapter(adapter);
 
+        //set the itemclicklistener for each item in the list.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Get the {@link Word} object at the given position the user clicked on
                 Tour tour = supmarket.get(position);
 
-                if (position == 0){
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);}else if (position == 1){
+                if (position == 0) {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
-                }else if (position == 2){
+                } else if (position == 1) {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
-                }else if (position == 3){
+                } else if (position == 2) {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
-                }else if (position == 4){
+                } else if (position == 3) {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
-                }else if (position == 5){
+                } else if (position == 4) {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
-                }else if (position == 6){
+                } else if (position == 5) {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
-                }else {
+                } else if (position == 6) {
+                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
+                    startActivity(intent);
+                } else {
                     Intent intent = new Intent(getActivity(), ForSupermarkets.class);
                     startActivity(intent);
                 }

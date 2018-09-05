@@ -41,24 +41,20 @@ public class HospitalsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_hospitals, container, false);
         // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_restaurant, container, false);
 
         //Create an arraylist of artists
         final ArrayList<Tour> hospital = new ArrayList<Tour>();
-        hospital.add(new Tour("Wakkis", "A hotel situated in Wuse 2", R.drawable.wakkiss));
-        hospital.add(new Tour("Wilson", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        hospital.add(new Tour("Dunes", "A hotel situated in Wuse 2", R.drawable.restaurant_one));
-        hospital.add(new Tour("Mama Cass", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        hospital.add(new Tour("Jevnik", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        hospital.add(new Tour("Biobak", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        hospital.add(new Tour("Biobak", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-        hospital.add(new Tour("Biobak", "A hotel situated in Wuse 2", R.drawable.wilsonn));
-
+        hospital.add(new Tour("Lake Hospital", "Set in the serene part of town, offering specialist..", R.drawable.wakkiss));
+        hospital.add(new Tour("Adil Clinics", "Set in the serene part of town, offering specialist..", R.drawable.wilsonn));
+        hospital.add(new Tour("Modi Hospital", "Set in the serene part of town, offering specialist..", R.drawable.restaurant_one));
+        hospital.add(new Tour("Malone Hospital", "Set in the serene part of town, offering specialist..", R.drawable.wilsonn));
+        hospital.add(new Tour("Avok Clinics", "Set in the serene part of town, offering specialist..", R.drawable.mamacassp));
+        hospital.add(new Tour("Ket Specialist", "Set in the serene part of town, offering specialist..", R.drawable.jevinikp));
+        hospital.add(new Tour("Vit Hospital", "Set in the serene part of town, offering specialist..", R.drawable.spicep));
+        hospital.add(new Tour("Kart Clinics", "Set in the serene part of town, offering specialist..", R.drawable.wilsonn));
 
 
         // Create the adapter to convert the array to views
-        //TourAdapter adapter = new TourAdapter(this, restaurant);
-        //Create an ArrayAdapter object, adapter from the Custom ArrayAdapter class, WordAdapter
         TourAdapter adapter = new TourAdapter(getActivity(), hospital);
 
         //Create an object of the ListView
@@ -67,33 +63,35 @@ public class HospitalsFragment extends Fragment {
         // Attach the adapter to a ListView
         listView.setAdapter(adapter);
 
+        //Create an itemclicklistener for each item in the list.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Get the {@link Word} object at the given position the user clicked on
                 Tour tour = hospital.get(position);
 
-                if (position == 0){
-                    Intent intent = new Intent(getActivity(), ForHospitals.class);
-                    startActivity(intent);}else if (position == 1){
+                if (position == 0) {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
-                }else if (position == 2){
+                } else if (position == 1) {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
-                }else if (position == 3){
+                } else if (position == 2) {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
-                }else if (position == 4){
+                } else if (position == 3) {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
-                }else if (position == 5){
+                } else if (position == 4) {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
-                }else if (position == 6){
+                } else if (position == 5) {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
-                }else {
+                } else if (position == 6) {
+                    Intent intent = new Intent(getActivity(), ForHospitals.class);
+                    startActivity(intent);
+                } else {
                     Intent intent = new Intent(getActivity(), ForHospitals.class);
                     startActivity(intent);
                 }

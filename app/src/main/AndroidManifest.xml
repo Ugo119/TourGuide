@@ -18,32 +18,57 @@
         </activity>
         <activity
             android:name=".Restaurants.Wakkis"
-            android:label="Item 1" />
+            android:label="Item 1"
+            android:parentActivityName=".Restaurants.Wakkis" />
         <activity
             android:name=".Restaurants.MamaCass"
-            android:label="Item 2" />
+            android:label="Item 2"
+            android:parentActivityName=".Restaurants.MamaCass" />
         <activity
             android:name=".Restaurants.Jevinik"
-            android:label="Item 3" />
+            android:label="Item 3"
+            android:parentActivityName=".Restaurants.Jevinik" />
         <activity
             android:name=".Restaurants.SpicePlatter"
-            android:label="Item 4" />
+            android:label="Item 4"
+            android:parentActivityName=".Restaurants.SpicePlatter" />
         <activity
             android:name=".Restaurants.CharcoalGrill"
-            android:label="Item 5" />
+            android:label="Item 5"
+            android:parentActivityName=".Restaurants.CharcoalGrill" />
         <activity
             android:name=".Restaurants.Nkoyo"
-            android:label="Item 6" />
+            android:label="Item 6"
+            android:parentActivityName=".Restaurants.Nkoyo" />
         <activity
             android:name=".Restaurants.BluCabana"
-            android:label="Item 7" />
+            android:label="Item 7"
+            android:parentActivityName=".Restaurants.BluCabana" />
         <activity
             android:name=".Restaurants.Serendib"
-            android:label="Item 8" />
-        <activity android:name=".Hospitals.ForHospitals" />
-        <activity android:name=".Lounges.ForLounges" />
-        <activity android:name=".Parks.ForParks" />
-        <activity android:name=".Supermarkets.ForSupermarkets"></activity>
+            android:label="Item 8"
+            android:parentActivityName=".Restaurants.Serendib" />
+        <activity
+            android:name=".Hospitals.ForHospitals"
+            android:label="Hospital item"
+            android:parentActivityName=".Hospitals.ForHospitals" />
+        <activity
+            android:name=".Lounges.ForLounges"
+            android:label="Lounge item"
+            android:parentActivityName=".Lounges.ForLounges" />
+        <activity
+            android:name=".Parks.ForParks"
+            android:label="Park item"
+            android:parentActivityName=".Parks.ForParks" />
+        <activity
+            android:name=".Supermarkets.ForSupermarkets"
+            android:label="Supermarket item"
+            android:parentActivityName=".Supermarkets.ForSupermarkets" />
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Welcome"></activity>
     </application>
 
 </manifest>

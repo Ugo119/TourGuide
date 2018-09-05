@@ -23,7 +23,6 @@ import java.util.ArrayList;
 public class RestaurantFragment extends Fragment {
 
 
-
     public RestaurantFragment() {
         // Required empty public constructor
     }
@@ -38,7 +37,7 @@ public class RestaurantFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_restaurant, container, false);
 
         //Create an arraylist of artists
-         final ArrayList<Tour> restaurant = new ArrayList<Tour>();
+        final ArrayList<Tour> restaurant = new ArrayList<Tour>();
         restaurant.add(new Tour("Wakkis", "We are a free standing purpose built restaurant that offers great and memorable dining experience...", R.drawable.wakkisp));
         restaurant.add(new Tour("Mama Cass", "Established in 1983 to meet the demands of food lovers who appreciate quality,....", R.drawable.mamacassp));
         restaurant.add(new Tour("Jevinik", "Jevinik Restaurant has acquired ample culinary skills to serve you with homemade ...... ", R.drawable.jevinikp));
@@ -49,10 +48,7 @@ public class RestaurantFragment extends Fragment {
         restaurant.add(new Tour("Serendib", "Serendib Restaurant & Bar is on the rooftop of the Lake Crescent Hotel....", R.drawable.serendibp));
 
 
-
         // Create the adapter to convert the array to views
-        //TourAdapter adapter = new TourAdapter(this, restaurant);
-        //Create an ArrayAdapter object, adapter from the Custom ArrayAdapter class, WordAdapter
         TourAdapter adapter = new TourAdapter(getActivity(), restaurant);
 
         //Create an object of the ListView
@@ -68,32 +64,33 @@ public class RestaurantFragment extends Fragment {
                 //Get the {@link Word} object at the given position the user clicked on
                 Tour tour = restaurant.get(position);
 
-                if (position == 0){
+                if (position == 0) {
                     Intent intent = new Intent(getActivity(), Wakkis.class);
-                    startActivity(intent);}else if (position == 1){
+                    startActivity(intent);
+                } else if (position == 1) {
                     Intent intent = new Intent(getActivity(), MamaCass.class);
                     startActivity(intent);
-                }else if (position == 2){
+                } else if (position == 2) {
                     Intent intent = new Intent(getActivity(), Jevinik.class);
                     startActivity(intent);
-                }else if (position == 3){
+                } else if (position == 3) {
                     Intent intent = new Intent(getActivity(), SpicePlatter.class);
                     startActivity(intent);
-                }else if (position == 4){
+                } else if (position == 4) {
                     Intent intent = new Intent(getActivity(), CharcoalGrill.class);
                     startActivity(intent);
-                }else if (position == 5){
+                } else if (position == 5) {
                     Intent intent = new Intent(getActivity(), Nkoyo.class);
                     startActivity(intent);
-                }else if (position == 6){
+                } else if (position == 6) {
                     Intent intent = new Intent(getActivity(), BluCabana.class);
                     startActivity(intent);
-                }else {
+                } else {
                     Intent intent = new Intent(getActivity(), Serendib.class);
                     startActivity(intent);
                 }
             }
-            });
+        });
         return rootView;
     }
 
