@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         TourFragmentPagerAdapter adapter = new TourFragmentPagerAdapter(getSupportFragmentManager());
 
         //Adding fragments
-        adapter.AddFragment(new HomeFragment(), "Home");
-        adapter.AddFragment(new RestaurantFragment(), "Restaurants");
-        adapter.AddFragment(new SuperMarketFragment(), "Supermarkets");
-        adapter.AddFragment(new ParksFragment(), "Parks");
-        adapter.AddFragment(new HospitalsFragment(), "Hospitals");
-        adapter.AddFragment(new LoungesFragment(), "Lounges");
+        adapter.AddFragment(new HomeFragment(), getString(R.string.category_home));
+        adapter.AddFragment(new RestaurantFragment(), getString(R.string.category_restaurant));
+        adapter.AddFragment(new SuperMarketFragment(), getString(R.string.category_supermarket));
+        adapter.AddFragment(new ParksFragment(), getString(R.string.category_park));
+        adapter.AddFragment(new HospitalsFragment(), getString(R.string.category_hospital));
+        adapter.AddFragment(new LoungesFragment(), getString(R.string.category_lounge));
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);

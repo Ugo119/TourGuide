@@ -17,7 +17,7 @@ import com.example.ugo.tourguide.R;
 import java.util.ArrayList;
 
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  */
 public class SuperMarketFragment extends Fragment {
@@ -32,19 +32,17 @@ public class SuperMarketFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_super_market, container, false);
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_restaurant, container, false);
 
         //Create an arraylist of artists
         final ArrayList<Tour> supmarket = new ArrayList<Tour>();
-        supmarket.add(new Tour("Grand Square", "The best supermarket that has all that you have ever wanted..", R.drawable.wakkisp));
-        supmarket.add(new Tour("Xclusive Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.spicep));
-        supmarket.add(new Tour("Chemzho Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.jevinikp));
-        supmarket.add(new Tour("Taru Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.nkoyop));
-        supmarket.add(new Tour("Ibe Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.blucabanap));
-        supmarket.add(new Tour("King Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.charcoalp));
-        supmarket.add(new Tour("Sido Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.mamacassp));
-        supmarket.add(new Tour("Chevo Stores", "The best supermarket that has all that you have ever wanted..", R.drawable.mamacassp));
+        supmarket.add(new Tour(getString(R.string.grand_square), getString(R.string.supermarket_desc), R.drawable.wakkisp));
+        supmarket.add(new Tour(getString(R.string.xclusive_stores), getString(R.string.supermarket_desc), R.drawable.spicep));
+        supmarket.add(new Tour(getString(R.string.chemzho_stores), getString(R.string.supermarket_desc), R.drawable.jevinikp));
+        supmarket.add(new Tour(getString(R.string.taru_stores), getString(R.string.supermarket_desc), R.drawable.nkoyop));
+        supmarket.add(new Tour(getString(R.string.ibe_stores), getString(R.string.supermarket_desc), R.drawable.blucabanap));
+        supmarket.add(new Tour(getString(R.string.king_stores), getString(R.string.supermarket_desc), R.drawable.charcoalp));
+        supmarket.add(new Tour(getString(R.string.sido_stores), getString(R.string.supermarket_desc), R.drawable.mamacassp));
+        supmarket.add(new Tour(getString(R.string.chevo_stores), getString(R.string.supermarket_desc), R.drawable.mamacassp));
 
 
         // Create the adapter to convert the array to views
@@ -61,33 +59,10 @@ public class SuperMarketFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Get the {@link Word} object at the given position the user clicked on
-                Tour tour = supmarket.get(position);
 
-                if (position == 0) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else if (position == 1) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else if (position == 2) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else if (position == 3) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else if (position == 4) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else if (position == 5) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else if (position == 6) {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                } else {
-                    Intent intent = new Intent(getActivity(), ForSupermarkets.class);
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(getActivity(), ForSupermarkets.class);
+                startActivity(intent);
+
             }
         });
         return rootView;

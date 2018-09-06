@@ -17,7 +17,7 @@ import com.example.ugo.tourguide.R;
 import java.util.ArrayList;
 
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  */
 public class ParksFragment extends Fragment {
@@ -32,19 +32,17 @@ public class ParksFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_parks, container, false);
-        // Inflate the layout for this fragment
-
 
         //Create an arraylist of artists
         final ArrayList<Tour> parks = new ArrayList<Tour>();
-        parks.add(new Tour("Millenial", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.wakkiss));
-        parks.add(new Tour("Edil Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.spicep));
-        parks.add(new Tour("City Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.nkoyop));
-        parks.add(new Tour("Jag Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.wilsonn));
-        parks.add(new Tour("Matimo Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.blucabanap));
-        parks.add(new Tour("Redil Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.wilsonn));
-        parks.add(new Tour("National", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.grandsqr));
-        parks.add(new Tour("Wunder Park", "Thinking of a good park to relax with family and enjoy what nature....", R.drawable.jevinikp));
+        parks.add(new Tour(getString(R.string.millenial_park), getString(R.string.park_desc), R.drawable.wakkiss));
+        parks.add(new Tour(getString(R.string.edil_park), getString(R.string.park_desc), R.drawable.spicep));
+        parks.add(new Tour(getString(R.string.city_park), getString(R.string.park_desc), R.drawable.nkoyop));
+        parks.add(new Tour(getString(R.string.jag_park), getString(R.string.park_desc), R.drawable.wilsonn));
+        parks.add(new Tour(getString(R.string.matimo_park), getString(R.string.park_desc), R.drawable.blucabanap));
+        parks.add(new Tour(getString(R.string.redil_park), getString(R.string.park_desc), R.drawable.wilsonn));
+        parks.add(new Tour(getString(R.string.nationa_park), getString(R.string.park_desc), R.drawable.grandsqr));
+        parks.add(new Tour(getString(R.string.wunder_park), getString(R.string.park_desc), R.drawable.jevinikp));
 
 
         // Create the adapter to convert the array to views
@@ -60,33 +58,9 @@ public class ParksFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Get the {@link Word} object at the given position the user clicked on
-                Tour tour = parks.get(position);
+                Intent intent = new Intent(getActivity(), ForParks.class);
+                startActivity(intent);
 
-                if (position == 0) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else if (position == 1) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else if (position == 2) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else if (position == 3) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else if (position == 4) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else if (position == 5) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else if (position == 6) {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                } else {
-                    Intent intent = new Intent(getActivity(), ForParks.class);
-                    startActivity(intent);
-                }
             }
         });
         return rootView;
